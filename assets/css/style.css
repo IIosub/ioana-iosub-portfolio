@@ -1,6 +1,7 @@
 :root{
   --blue:rgb(170, 208, 232);
   --grey:rgb(51, 52, 68);
+  --light
 }
 
 * {
@@ -46,7 +47,9 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  padding: 50px 0 50px 0;
+  background-color: rgb(214, 205, 194);
+  
 }
 
 .content-wrapper {
@@ -62,6 +65,7 @@ h1{
   width: 200px;
   height: auto;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 
@@ -73,6 +77,7 @@ h1{
 h2{
   margin-bottom: 0px;
   color: var(--grey);
+  font-family: 'Poppins', sans-serif;
 }
 h3{
   font-size: 100px;
@@ -80,10 +85,40 @@ h3{
   color: var(--grey);
 }
 
-.introduction p{
+.introduce-me p{
   font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0px;
+  color: var(--grey)
+
+  
   
 }
+
+.about-me{
+  display: flex;
+padding: 50px 100px;
+
+
+
+}
+
+.first-paragraph{
+font-weight: bold;
+text-align: right;
+font-size: 30px;
+ color: var(--grey);
+}
+
+.second-paragraph{
+margin-left: 10px;
+padding-left: 10px;
+border-left: 2px solid rgb(147, 147, 147);
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
+
+}
+
 
 
 
@@ -127,8 +162,23 @@ h3 {
   margin: 0px;
   
 }
-
-.introduction p{
-  
+.introduce-me p{
+  font-size:18px;
 }
+.about-me{
+ padding: 5px;
+ display: block;
+ 
+}
+
+.first-paragraph{
+  font-size: 20px;
+  text-align:left;
+  padding-left: 10px;
+}
+
+.second-paragraph{
+  font-size: 13px;
+}
+
 }
