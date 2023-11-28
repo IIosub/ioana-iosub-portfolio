@@ -1,12 +1,11 @@
 :root{
   --blue:rgb(170, 208, 232);
   --grey:rgb(51, 52, 68);
-  --light
+  
 }
 
-* {
-  box-sizing: border-box;
-}
+
+
 
 header{
   background-color: var(--grey);
@@ -48,7 +47,7 @@ h1{
   justify-content: center;
   align-items: center;
   padding: 50px 0 50px 0;
-  background-color: rgb(214, 205, 194);
+  background-color: rgb(218, 217, 225);
   
 }
 
@@ -95,33 +94,116 @@ h3{
   
 }
 
-.about-me{
+#about-me, #projects{
   display: flex;
 padding: 50px 100px;
 
 
-
 }
 
-.first-paragraph{
+.first-paragraph, .work, .in-touch{
 font-weight: bold;
-text-align: right;
+
 font-size: 30px;
  color: var(--grey);
 }
 
-.second-paragraph{
-margin-left: 10px;
-padding-left: 10px;
-border-left: 2px solid rgb(147, 147, 147);
+.second-paragraph, .grid, .contacts{
+  display: flex;
+  gap: 15px;
+margin-left: 20px;
+padding-left: 20px;
+border-left: 4px solid rgb(147, 147, 147);
 font-size: 15px;
 font-family: 'Poppins', sans-serif;
 
 }
 
+#forecast {
+  background-image: url(../images/forecast.jpg);
+  grid-area: forecast;
+}
+
+#clock {
+  background-image: url(../images/clock.jpeg);
+  grid-area: clock;
+}
+
+#prework{
+  background-image: url(../images/prework.jpeg);
+    grid-area: prework;
+}
+
+#poetry{
+  background-image: url(../images/poetry.jpeg);
+    grid-area: poetry;
+}
+
+#portfolio{
+  background-image: url(../images/portfolio1.webp);
+    grid-area: portfolio;
+
+}
+
+
+.grid-area {
+  position: relative;
+  cursor:pointer;
+  display: grid;
+  background-repeat:no-repeat;
+  margin: 12px;
+  background-size: cover;
+  cursor: pointer;
+
+  
+}
 
 
 
+.project-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--grey);
+  text-align: start;
+  
+}
+
+.grid{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 200px 200px;
+  grid-template-areas: "forecast forecast"
+  "clock prework" "poetry portfolio";
+}
+
+.project-name h4 {
+  color: antiquewhite;
+  margin: 0 30px;
+}
+
+#contact-me{
+  display: flex;
+ 
+}
+ .in-touch{
+  margin-left: 20px;
+  
+ }
+.contacts{
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: blue;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -132,7 +214,10 @@ font-family: 'Poppins', sans-serif;
  nav{
   width: 100%;
  }
-
+ 
+ul{
+  justify-content: center;
+}
  .intro{
   margin-top: 10px;
  }
@@ -165,20 +250,53 @@ h3 {
 .introduce-me p{
   font-size:18px;
 }
-.about-me{
+#about-me{
  padding: 5px;
  display: block;
  
 }
 
-.first-paragraph{
-  font-size: 20px;
-  text-align:left;
-  padding-left: 10px;
+.first-paragraph, .work{ 
+ font-size: 20px;
+ text-align:left;
+ text-align: center;
+ border-bottom: 1px solid black;
 }
 
 .second-paragraph{
+  display: block;
   font-size: 13px;
+  margin: 20px 0;
+  border: none;
+  padding: 10px;
 }
 
+#projects{
+  display: block;
+  padding: 0px;
+}
+
+.grid{
+  border: none;
+  padding: 0px;
+  margin: 20px 0;
+  gap: 5px;
+}
+
+.in-touch{
+  font-size: 20px;
+  text-align: end;
+}
+
+.contacts{
+  font-size: 15px;
+} 
+
+#contact-me{
+  padding-bottom: 40px;
+}
+#contact-me .contacts{
+
+border: none;
+}
 }
