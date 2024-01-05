@@ -25,6 +25,8 @@ When the page is resized or viewed on various screens and devices then the layou
 
 5. To ensure my portfolio remains visually appealing on smaller screens without disrupting the CSS layout, I've incorporated media queries with a breakpoint set at 600px. These media queries activate adjustments within the CSS when the screen size falls below 600px, allowing for a more optimized display on smaller devices.
 
+Deployed app URL: https://iiosub.github.io/ioana-iosub-portfolio/
+
 
 
    ![porfolio](https://github.com/IIosub/ioana-iosub-portfolio/assets/114613610/f0ce19f2-4a75-4790-9ee9-259f9ed5b506)
